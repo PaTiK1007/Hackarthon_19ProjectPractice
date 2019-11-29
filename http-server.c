@@ -63,7 +63,6 @@ char* read_dht11 () {
     printf("Humidity = %d.%d\t", d[0], d[1]) ;
     printf("Temperat = %d.%d C\n", d[2], d[3]) ;
 		sprintf(result, "%d.%d", d[2], d[3]);
-		return result;
     //printf("Farenhei = %f\n", f) ;
   }
   else {
@@ -72,6 +71,7 @@ char* read_dht11 () {
     // printf("Humidity = %d.%d\t", d[0], d[1]) ;
     // printf("Temperat = %d.%d C\n", d[2], d[3]) ;
   }
+	return result;
 }
 
 void * worker (void * arg) {
